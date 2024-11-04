@@ -407,7 +407,7 @@ git commit -m "Quarta modificação"
 
 **Ilustração:**
 
-![fluxo da branch](URL_da_Imagem)
+![fluxo da branch](https://github.com/Gbrito-code/Aula-Git-e-Github/blob/main/branch.png)
 
 
 Aqui, a `nova-feature` diverge da `main` a partir do mesmo ponto, permitindo que você desenvolva funcionalidades de forma isolada.
