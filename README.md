@@ -1,7 +1,26 @@
 # Introdução ao Git
 
 O Git é uma ferramenta fundamental para o versionamento de código e colaboração em equipes de desenvolvimento, especialmente quando múltiplas pessoas estão trabalhando em um mesmo projeto.
+- [Documentação Oficial em português](https://git-scm.com/docs/git/pt_BR)
 
+### Conhecimentos
+- 6 Git - Sistema de controle de versões distribuído
+	- 6.1. Evolução
+	- 6.2. Comandos iniciais
+		- 6.2.1.Init
+		- 6.2.2.Add
+		- 6.2.3.Status
+		- 6.2.4.Config
+		- 6.2.5.Commit
+		- 6.2.6.Log
+- 7 Versionamento em nuvem
+	- 7.1. Serviços
+		- 7.1.1.Github
+		- 7.1.2.BitBucket
+		- 7.1.3.Azure Repository
+	- 7.2. Pull Requests
+	- 7.3. Resolução de conflitos
+   
 ## 📜 Problema no Desenvolvimento
 
 ### Desafios com o Desenvolvimento Colaborativo
@@ -16,89 +35,6 @@ Em projetos de software, é comum termos várias pessoas contribuindo ao mesmo t
 - **Como vocês organizam as diferentes versões de um projeto?** Existe alguma estratégia que vocês usam para controlar quais mudanças foram feitas e por quem?
 - **O que acontece quando queremos testar uma nova funcionalidade sem impactar o código que já está funcionando?** Como isolar essas mudanças para garantir que não introduzimos novos bugs?
 
-## 📂 Vamos Criar um Projeto Simples para entender o git
-
-### 1. Criação de uma Pasta
-
-Primeiro, vamos criar uma pasta para o nosso projeto:
-
-```bash
-mkdir aula-git
-cd aula-git
-```
-
-### 2. Criação de um Arquivo Python
-
-Dentro da pasta, vamos criar um arquivo Python simples:
-
-```bash
-touch main.py
-```
-
-Abra o arquivo `main.py` e adicione o seguinte código:
-
-```python
-print("Hello, World!")
-```
-
-### Exemplo de Modificações Sem o Git
-
-Vamos seguir o exemplo onde modificamos um arquivo Python várias vezes e criamos novos arquivos, mas sem utilizar o Git para rastrear essas mudanças. Isso demonstra o problema de não ter controle de versão e como é fácil perder o histórico do que foi feito.
-
-#### Passo 1: Criando e Modificando o Arquivo Inicial
-
-Primeiro, criamos o arquivo `main.py` com o seguinte conteúdo:
-
-```python
-print("Hello, World!")
-```
-
-Essa é a primeira versão do arquivo. Agora, imagine que você precisa fazer algumas mudanças.
-
-#### Passo 2: Primeira Modificação
-
-Você modifica o arquivo `main.py` para adicionar uma nova linha de código:
-
-```python
-print("Hello, World!")
-print("Primeira Modificação")
-```
-
-Essa mudança é feita diretamente no arquivo, substituindo a versão anterior. Como não estamos usando Git, a versão original do arquivo é perdida, e não temos mais acesso a ela.
-
-#### Passo 3: Segunda Modificação
-
-Depois de algum tempo, você decide modificar o arquivo novamente:
-
-```python
-print("Hello, World!")
-print("Primeira Modificação")
-print("Segunda Modificação")
-```
-
-Mais uma vez, o arquivo original e a primeira modificação são substituídos por essa nova versão. Sem o Git, não há registro das mudanças anteriores.
-
-#### Passo 4: Terceira Modificação e Criação de um Novo Arquivo
-
-Agora, você faz uma terceira modificação no `main.py` e também cria um novo arquivo chamado `auxiliary.py`:
-
-**main.py:**
-
-```python
-print("Hello, World!")
-print("Primeira Modificação")
-print("Segunda Modificação")
-print("Terceira Modificação")
-```
-
-**auxiliary.py:**
-
-```python
-def helper():
-    print("Função Auxiliar")
-```
-
-Essas novas mudanças também são feitas diretamente no arquivo, substituindo tudo o que havia antes. Como não estamos usando Git, o histórico das três versões anteriores do `main.py` é completamente perdido.
 
 ### O Problema Sem Git
 
@@ -184,15 +120,24 @@ Você pode visualizar as configurações atuais usando os seguintes comandos:
 
 Esses comandos vão listar as configurações e seus valores, permitindo que você veja detalhes como o nome de usuário e o e-mail configurados para o Git.
 
-### Exemplo Completo Usando Git: Passo a Passo
+## 📂 Vamos Criar um Projeto Simples para entender o git
 
 Vamos seguir um exemplo onde fazemos modificações em um arquivo Python e gerenciamos essas alterações usando Git. Este processo incluirá a criação de commits para cada modificação, além de explorar conceitos importantes como o `HEAD`, branches, e o comando `git checkout`.
+
+### Criação de uma Pasta
+
+Primeiro, vamos criar uma pasta para o nosso projeto:
+
+```bash
+mkdir aula-git
+cd aula-git
+```
 
 ### 1. Criação do Repositório e Primeira Modificação
 
 #### Inicializando o Repositório
 
-Primeiro, vamos inicializar um novo repositório Git no diretório do projeto:
+Vamos inicializar um novo repositório Git no diretório do projeto:
 
 ```bash
 git init
