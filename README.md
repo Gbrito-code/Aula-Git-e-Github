@@ -209,6 +209,7 @@ Depois de fazer a modificação, vamos verificar novamente o estado dos arquivos
 ```bash
 git status
 ```
+![fluxo git](https://github.com/Gbrito-code/Aula-Git-e-Github/blob/main/fluxo%20git%202.png)
 
 ### Temos duas opções - Explicação do Fluxo:
 
