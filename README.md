@@ -179,10 +179,20 @@ Para adicionar todos os arquivos existentes no projeto
 git add .
 ```
 
+Remover um arquivo do git
+```bash
+git rm --cached main.py
+```
+
 Agora, faremos o primeiro commit para salvar o estado inicial do projeto:
 
 ```bash
 git commit -m "Adiciona o arquivo main.py com um simples print"
+```
+
+Para verificar o commit 
+```bash
+git log
 ```
 
 ### 2. Primeira Modificação e Novo Commit
