@@ -209,7 +209,7 @@ Depois de fazer a modificação, vamos verificar novamente o estado dos arquivos
 ```bash
 git status
 ```
-![fluxo git](https://github.com/Gbrito-code/Aula-Git-e-Github/blob/main/fluxo%20git%202.png)
+![fluxo git](https://github.com/Gbrito-code/Aula-Git-e-Github/blob/main/Aula%20Git/fluxo%20git%202.png)
 
 ### Temos duas opções - Explicação do Fluxo:
 
@@ -363,7 +363,7 @@ git commit -m "Quarta modificação"
 
 **Ilustração:**
 
-![fluxo da branch](https://github.com/Gbrito-code/Aula-Git-e-Github/blob/main/branch.png)
+![fluxo da branch](https://github.com/Gbrito-code/Aula-Git-e-Github/blob/main/Aula%20Git/branch.png)
 
 
 Aqui, a `nova-feature` diverge da `main` a partir do mesmo ponto, permitindo que você desenvolva funcionalidades de forma isolada.
