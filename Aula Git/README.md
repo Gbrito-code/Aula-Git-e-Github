@@ -352,6 +352,14 @@ git checkout nova-feature
 ```
 
 Isso muda o `HEAD` para a nova branch `nova-feature`, o que significa que qualquer commit feito agora será registrado nessa branch.
+```python
+print("Hello, World!")
+print("Primeira Modificação")
+print("Segunda Modificação")
+print("Terceira Modificação")
+
+print("Quarta Modificação")
+```
 
 ```bash
 git add main.py
@@ -452,7 +460,7 @@ git branch
 Excluindo a branch experiment:
 
 ```bash
-git git branch -d experiment
+git branch -d experiment
 ```
 
 
@@ -491,6 +499,7 @@ Antes de começar, exclua todas as branches adicionais, mantendo apenas a branch
 
 3. **Criar e mudar para a branch `feature-3`**:
     ```bash
+    git checkout main
     git checkout -b feature-3
     # Modificar file3.py e fazer commit
     git add file3.py
@@ -503,7 +512,7 @@ Aqui está o diagrama que ilustra essas operações:
 
 ```mermaid
 graph TD;
-    subgraph main [Branch: main Production]
+    subgraph main [Branch: main Produção]
         A[Initial Commit] --> B[main];
     end
 
